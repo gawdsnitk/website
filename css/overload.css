@@ -1,0 +1,94 @@
+		@font-face {
+				font-family: 'nthin';
+				src: url("../fonts/typog/Roboto-Light.ttf");
+		}
+		@font-face {
+				font-family: 'bthin';
+				src: url("../fonts/typog/SSLight.otf");
+		}
+		.boxer
+		{
+				padding:1%;
+				min-height:160px;
+				text-transform:capitalize;
+				color:#F2F7F8;
+				background-color:rgb(113,31,148);
+				border-color:lightyellow;
+				border-style:solid;
+				border-width:1px;
+		}
+		.deftext //this is for default text
+		{
+			font-family:helvetica;
+		}
+		body>minjm
+		{
+			height:100%;
+			background:rgb(251,257,240);
+			font-size:1.8em;
+			font-family:bthin;
+		}
+		.glyphicon
+		{
+			margin-right:1%;
+			color:white;
+		}
+		.sectionFormat
+		{
+			padding:2% 8% 8% 8%;
+			background:#194345;
+			color:white;
+		}
+		.sectionFormat:nth-child(even)
+		{
+			background-color:#A5C663;
+		}
+		.sectionFormat:nth-child(odd) h1
+		{
+			color:#F2F7F8;
+		}
+		.sectionFormat:nth-child(odd) small
+		{
+			color:#809798;
+			margin-left:1%;
+		}
+		.sectionFormat:nth-child(even)
+		{
+			color:black;
+		}
+		.sectionFormat:nth-child(even) h1
+		{
+			color:#407f7f;
+		}
+		.sectionFormat:nth-child(even) small
+		{
+			color:#D4EE9F;
+			margin-left:1%;
+		}
+		.box{
+			line-height:120%;
+			color:#FFF;
+			font-family:nthin;
+			padding:1%;
+		}
+		.box>h3
+		{
+		color:white;
+		text-transform:uppercase;
+		font-weight:bold;
+		font-family: nthin;
+		}
+		.oddBox
+		{
+			background:#0D4D4D;
+		}
+		.evenBox{
+			background:#407f7f;
+		}
+		h3
+		{
+			color:#FFF;
+		}
+		i{
+			padding-right:1%;
+		}
