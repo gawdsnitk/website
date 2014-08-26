@@ -12,8 +12,8 @@
 				min-height:160px;
 				text-transform:capitalize;
 				color:#F2F7F8;
-				background-color:rgb(113,31,148);
-				border-color:lightyellow;
+				background-color:rgba(25,67,69,0.4);//rgb(113,31,148);
+				//border-color:lightyellow;
 				border-style:solid;
 				border-width:1px;
 		}
@@ -21,10 +21,10 @@
 		{
 			font-family:helvetica;
 		}
-		body>minjm
+		.minjm
 		{
-			height:100%;
-			background:rgb(251,257,240);
+			//height:100%;
+			background:#17B6BC;
 			font-size:1.8em;
 			font-family:bthin;
 		}
