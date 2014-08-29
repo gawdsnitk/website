@@ -11,8 +11,8 @@
 				padding:1%;
 				min-height:160px;
 				text-transform:capitalize;
-				color:#F2F7F8;
-				background-color:rgba(25,67,69,0.4);//rgb(113,31,148);
+				color:white;//maroon;//#F2F7F8;
+				background-color:rgba(205,203,188,0.7);//#CDCBBC;//rgba(25,67,69,0.4);//rgb(113,31,148);
 				//border-color:lightyellow;
 				border-style:solid;
 				border-width:1px;
@@ -24,7 +24,11 @@
 		.minjm
 		{
 			//height:100%;
-			background:#17B6BC;
+			//background:#A5C663;//#313D4B;//#17B6BC;
+			background:url('../images/back4.jpg');
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center;
 			font-size:1.8em;
 			font-family:bthin;
 		}
@@ -37,11 +41,10 @@
 		{
 			padding:2% 8% 8% 8%;
 			background:#194345;
-			color:white;
 		}
 		.sectionFormat:nth-child(even)
 		{
-			background-color:#A5C663;
+			//background-color:#A5C663;
 		}
 		.sectionFormat:nth-child(odd) h1
 		{
@@ -65,11 +68,14 @@
 			color:#D4EE9F;
 			margin-left:1%;
 		}
+	.row{
+		text-align: center;
+	}
 		.box{
-			line-height:120%;
 			color:#FFF;
 			font-family:nthin;
 			padding:1%;
+			display: inline-block !important;
 		}
 		.box>h3
 		{
@@ -77,18 +83,139 @@
 		text-transform:uppercase;
 		font-weight:bold;
 		font-family: nthin;
+			border-top:1px solid darkgreen;
 		}
 		.oddBox
 		{
-			background:#0D4D4D;
+			//background:#0D4D4D;
 		}
 		.evenBox{
-			background:#407f7f;
+			//background:#407f7f;
 		}
 		h3
 		{
+			
 			color:#FFF;
 		}
 		i{
 			padding-right:1%;
 		}
+.topCover{
+	height:100%;
+	background:url('../images/2048.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.topCover h1{
+	color:whitesmoke !important;
+	font-family: open sans;//nthin;
+	margin-top:10%;
+	letter-spacing: 20px;
+	font-size:5em;
+}
+.topCover h1 span{
+	transition:all 1s;
+}
+.topCover a{
+	color:black;
+	background:rgba(255,255,255,0.8);
+	display: inline;
+	padding:0.5%;
+	border-radius: 5px;	
+	position:relative;
+	font-size:2em;
+}
+.topCover a{
+	cursor: pointer;	
+}
+#whoWeAre{
+	min-height:100%;
+	background:url('../images/who.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#whoWeAre h1, #whoWeAre span{
+	color:brown;
+}
+#whoWeAre p{
+	background:	rgba(165,42,42,0.8);//rgba(10,180,120,0.8);
+	padding:5%;
+	color:whitesmoke;//rgb(50,50,50);
+	font-size:1.5em;
+}
+#event{
+	background:url('../images/maker2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+	background-attachment:fixed;
+}
+#event div{
+	padding:20%;
+	font-size:2em;
+	color:white;
+	font-family: open sans;
+}
+#event a{
+	color:whitesmoke;
+}
+#gawds{
+	background:url('../images/chess.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height:100%;
+}
+#gawds h1, span{
+	color:white;
+}
+#gawds .gawds{
+	padding:5%;
+	color:whitesmoke;
+	font-size:1.5em;
+	font-family:nthin;
+}
+#gawds .gawds b{
+	font-size:1.1em;
+	border-bottom: 1px solid whitesmoke;
+}
+#gawds p{
+	color:whitesmoke;
+	font-size:1.2em;
+	font-style: italic;
+}
+#brigade{
+	color:white;
+}
+#brigade a{
+	text-decoration: underline;
+	color:white;
+	font-family: courier;
+}
+#brigade .text-quote{
+	font-style: italic;
+	font-size: 1.5em;
+	font-family: calibri;
+	color:transparent;
+	text-shadow: 1px 1px 1px white;
+	transition: all 0.5s;
+}
+#brigade .text-quote:hover{
+	color:white;
+}
+#brigade .jumbotron{
+	background:url('../images/work.JPG');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+#first .container{
+	padding-bottom:5%;
+}
+#first .container code h1{
+	color:whitesmoke;
+	background-color:none;
+}
