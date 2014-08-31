@@ -110,9 +110,10 @@
 .topCover h1{
 	color:whitesmoke !important;
 	font-family: open sans;//nthin;
-	margin-top:10%;
+	padding-top:5%;
 	letter-spacing: 20px;
 	font-size:5em;
+	height:50%;
 }
 .topCover h1 span{
 	transition:all 1s;
@@ -125,9 +126,6 @@
 	border-radius: 5px;	
 	position:relative;
 	font-size:2em;
-}
-.topCover a{
-	cursor: pointer;	
 }
 #whoWeAre{
 	min-height:100%;
@@ -167,7 +165,7 @@
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
-	height:100%;
+	min-height:100%;
 }
 #gawds h1, span{
 	color:white;

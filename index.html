@@ -1,0 +1,170 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type = "text/css" href = "css/bootstrap.css">
+	<link rel="stylesheet" type = "text/css" href = "ficon/css/font-awesome.min.css">
+	<link rel="stylesheet" type = "text/css" href = "css/overload.css">
+	<title>GAWDS</title>
+	</head>
+	<body class="text-center">
+		<section class="container-fluid topCover">
+			<h1><span id="g">G</span><span id="a">A</span><span id="w">W</span><span id="d">D</span><span id="s">S</span></h1>
+			<br><br><br><br><br><br><a href="#first">Know more</a>
+			<script src="js/jquery-1.9.1.min.js"></script>
+			<script>
+				var letter_num = 1;
+				setInterval(function(){
+					if(letter_num == 1)
+					$(".topCover h1 span:nth-child(5)").css('opacity','1');
+					else
+					$(".topCover h1 span:nth-child("+(letter_num-1)+")").css('opacity','1');
+					$(".topCover h1 span:nth-child("+letter_num+")").css('opacity','0');
+					if(letter_num == 5)
+					letter_num = 1;
+					else ++letter_num;
+				},300);
+				$(document).ready(function(){
+					$('.topCover h1').hover(function(){
+						$(this).css('letter-spacing','0');
+						$(this).css('font-size','3.8em');
+						$('#g').html('Graphics');
+						$('#a').html(' And<br>');
+						$('#w').html(' Web');
+						$('#d').html(' Development');
+						$('#s').html(' Squad');
+					},function(){
+						$(this).css('letter-spacing','20px');
+						$('#g').html('G');
+						$('#a').html('A');
+						$('#w').html('W');
+						$('#d').html('D');
+						$('#s').html('S');
+					});
+					$('a[href^="#"]').on('click',function (e) {
+					e.preventDefault();
+
+					var target = this.hash,
+					$target = $(target);
+	
+					$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+					}, 2000, 'swing', function () {
+					window.location.hash = target;
+					});
+			});
+				});
+			</script>
+		</section>
+		<div class = "minjm" id="first">
+		<div class = "container text-center">
+				<code><h1>&lt;p&nbsp;class = "Hello World!"&gt;</h1></code>
+			<div class="row">
+					<a class="col-md-6 col-xs-12 boxer" href="#whoWeAre">
+						<h2>Who we are</h2>
+						<h5>Know us and what we do.</h5>
+					</a>
+					<a class="col-md-6 col-xs-12 boxer" href="#whatWeDid">
+						<h2>What we did</h2>
+						<h5>We're being boastful here.</h5>
+					</a>
+				</div>
+				<div class="row">
+					<a class="col-md-6 col-xs-12 boxer" href="#event">
+						<h2>Future</h2>
+						<h5>What's on the cards for you?</h5>
+					</a>
+					<a class="col-md-6 col-xs-12 boxer" href="#gawds">
+						<h2>Meet the Gawds</h2 >
+						<h5>and bless your skills</h5>
+					</a>
+				</div>
+				<div class="row">
+					<a class="col-md-12 col-xs-12 boxer" href="#brigade">
+						<h2>Join the Brigade</h2 >
+						<h5>Be one of a kind</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<section id="whoWeAre" class = "container-fluid  sectionFormat">
+			<h1>Who we are<small> About us</small></h1>
+			<p>
+			We are group of Developers and Designers of NIT Kurukshetra, enthusiastic for innovating and improving our and other skills.
+			</p>
+			<p>
+				Our work revolves around designing great graphics to great web applications. We meet, we share our knowledge and we grow the other day.
+			</p>
+		</section>
+		
+		<section class = "container-fluid  sectionFormat" id="whatWeDid">
+		<h1>What we did<small> A glimpse of what we did</small></h1>
+			<div class = "row">
+					<div class = "col-md-4 col-sm-12 col-xs-12 oddBox box">
+						<img src = "images/ts.jpg" class = "img-responsive">
+						<h3> Web Development</h3>
+						Altius, Techspardha, Confluence, Obscura, Emarket - and we did end to end.
+					</div>
+					<div class = "col-md-4 col-sm-12 col-xs-12 evenBox box">
+						<img src = "images/Altius13(amt+text+BG).gif" class = "img-responsive">
+						<h3> Animations </h3>
+						We build 'em on Corel or HTML5, we build frames, you see the movie.
+					</div>
+					<div class = "col-md-4 col-sm-12 col-xs-12 oddBox box">
+						<img src = "images/graphics2.jpg" class = "img-responsive">
+						<h3> Graphics Designing</h3>
+						We understand colors and eyes.
+					</div>
+					<div class = "col-md-4 col-sm-12 col-xs-12 oddBox box">
+						<img src = "images/video.jpg" class = "img-responsive" onclick="window.open('http://www.youtube.com/watch?v=0v6OFi05BY8','_blank')">
+						<h3>Movie Making</h3>
+						Just the flick.
+					</div>
+					<div class = "col-md-4 col-sm-12 col-xs-12 oddBox box">
+						<img src = "images/IMG_5515.JPG" class = "img-responsive">
+						<h3>Workshops</h3>
+						We organised Web Development, Graphics and Photoshop, and Open Source workshops.
+					</div>
+					<div class = "col-md-4 col-sm-12 col-xs-12 oddBox box">
+						<img src = "images/brainstorm.jpg" class = "img-responsive">
+						<h3>Brainstorm</h3>
+						We teach each other what we expertise in.
+					</div>
+			</div>
+		</section>		
+		
+		<section id="event" class = "container-fluid  sectionFormat">
+			<h1 style="color:white">Future<small style="color:white"> The thing that matters</small></h1>
+			<!--<div class="progress progress-striped active">
+				<div class="progress-bar progress-bar-info" style="width: 100%;">
+			</div>
+			</div>-->
+			<div>
+			Get event details at <a href="http://gawds.in/appetype">gawds.in/appetype</a>
+			<!--For background knowledge from managerial aspect to all the technical areas, check out gawds.in/appetype/background-->
+			</div>
+		</section>
+
+		<section id="gawds" class = "container-fluid  sectionFormat">
+			<h1><span class= "glyphicon glyphicon-tower"></span>Meet the GAWDS<small> Oh my GAWDS!</small></h1>
+			<div class="gawds">
+				<b>Web Developers:</b><br>Siddhant Garg, Tarun Rai Tara, Akash Mehendiratta, Harsh Choudhary, Utkarsh Kumar, Luv Karakoti<br><br>
+				<b>Graphic Designers:</b><br> Neha Mittal, Bhanuj Verma, Kislay Jain, Saurabh Dhillon<br><br>
+				<b>Animations and Movies:</b><br> Vinay Jonnalgadda, Sumit Kumar, Prudhviraj
+			</div>
+			<p>
+				PS: We won't hesitate if you meet us for coffee or something. :)
+			</p>
+		</section>
+		</div>
+		<div class ="container deftext" id="brigade">
+			<div class = "jumbotron">
+			<h2>Want to join the brigade?</h2>
+			<p class = "lead">
+			Reach us out on <a href="mailto:#">namaste@gawds.in</a> and send us a few lines of why you want to join us.
+			</p>
+			<span class = "text-quote">Remember, We need passion, not stereotypes.</span>
+		</div>
+	</div>
+	</body>
+</html>
